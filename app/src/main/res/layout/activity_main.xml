@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/pinklava"
+    tools:context=".MainActivity">
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:src="@drawable/xrated"
+    android:layout_gravity="center"
+    android:background="@color/black"
+    />
+    <TextView
+        android:id="@+id/serienumber"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:textSize="18sp"
+        android:textColor="@color/pinkish"
+        android:text="number"
+        />
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:numColumns="2"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/setWallpaperButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set as Wallpaper"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+</LinearLayout>
